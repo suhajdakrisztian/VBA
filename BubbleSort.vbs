@@ -1,6 +1,6 @@
 Function BubbleSort(array_to_sort, IsDescending As Boolean)
 
-'Created b Krisztián Suhajda
+'Created by Krisztián Suhajda
 'Prerequisites:
 'Array contains numeric values
 'Array starts at 0
