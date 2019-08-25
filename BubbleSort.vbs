@@ -19,6 +19,7 @@ Function BubbleSort(array_to_sort, IsDescending As Boolean)
                     array_to_sort(j) = array_to_sort(j + 1)
                     array_to_sort(j + 1) = temp
                 End If
+                
             Else
 
                 If array_to_sort(j) > array_to_sort(j + 1) Then
