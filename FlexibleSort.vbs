@@ -1,6 +1,7 @@
 Function FlexibleSort(array_to_sort, StartingPoint, IsDescending As Boolean)
 
 'Created by Krisztián Suhajda
+'The algo is based on Bubble sort
 'the result array must be instantiated as a new variable
 'Arrays may either start at 0 or 1
 
