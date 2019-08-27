@@ -1,4 +1,4 @@
-Function FlexibleSort(array_to_sort, StartingPoint, IsDescending As Boolean)
+Function FlexibleSort(array_to_sort, IsDescending As Boolean)
 
 'Created by Krisztián Suhajda
 'The algo is based on Bubble sort
@@ -8,7 +8,7 @@ Function FlexibleSort(array_to_sort, StartingPoint, IsDescending As Boolean)
 
     array_length = UBound(array_to_sort)
 
-    If StartingPoint = 0 Then
+    If LBound(array_to_sort) = 0 Then
 
     For i = 0 To array_length
         For j = 0 To array_length - i - 1:
@@ -36,12 +36,11 @@ Function FlexibleSort(array_to_sort, StartingPoint, IsDescending As Boolean)
     
     FlexibleSort = array_to_sort
 
-'################# CASE WHEN ARRAY STARTS AT ONE ###################
 
-    ElseIf StartingPoint = 1 Then
+    ElseIf LBound(array_to_sort) <> 0 Then
 
-        For i = 1 To array_length + 1
-            For j = 1 To array_length - i:
+        For i = LBound(array_to_sort) To array_length + 1
+            For j = LBound(array_to_sort) To array_length - 1
 
                 If IsDescending Then
 
@@ -65,7 +64,9 @@ Function FlexibleSort(array_to_sort, StartingPoint, IsDescending As Boolean)
         Next
 
     Else
+
     FlexibleSort = "ENTER A VALID START" 'Hope this will never be visible
+
     End If
 
     FlexibleSort = array_to_sort
