@@ -1,4 +1,4 @@
-Sub Fill_Range_With_Formula():
+Sub Fill_Down_With_Formula():
 
     Application.ScreenUpdating = False
 
